@@ -1,0 +1,19 @@
+{
+  "name": "demoknex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" :"nodemon server.js",
+    "knex" : "knex"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.1",
+    "dotenv": "^14.2.0",
+    "knex": "^1.0.1",
+    "pg": "^8.7.1"
+  }
+}
