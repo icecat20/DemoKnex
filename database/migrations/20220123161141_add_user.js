@@ -1,4 +1,5 @@
 const user = {
+    id : 1,
     name : 'loi',
     lastname: 'mai',
     school : 'dtu'
@@ -6,8 +7,8 @@ const user = {
 exports.up = function(knex) {
 
   return knex.raw(`
-    INSERT INTO user (name,lastname,school)
-    VALUES (${user.name},${user.lastname},${user.school})`);
+    INSERT INTO "user" ("id","name","lastname","school")
+    VALUES (${user.id},'${user.name}','${user.lastname}','${user.school}')`);
   
 };
 
